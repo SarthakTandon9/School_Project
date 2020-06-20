@@ -1,10 +1,7 @@
 
-public class setDistance
+public class setDistance extends helper
 {
-    final double MtoK = 2209.0,  MtoCh = 1336.8,  MtoD = 1424.2,  MtoB = 983.8;
-    final double  KtoCh = 1674.4, KtoD = 1517.0, KtoB = 1887.8; 
-    final double ChtoD = 2201.7, ChtoB = 346.8; 
-    final double DtoB = 2176.8; 
+   
     //distance constants required for the costing.
     
 
