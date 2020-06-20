@@ -44,7 +44,8 @@ public class setDistance extends helper
         if(arrival.equals(destinations[1]))
         {
             distance = MtoK; 
-            //hello
+            //hellol
+            
         } // end of if. 
         else if(arrival.equals(destinations[2]))
         {
