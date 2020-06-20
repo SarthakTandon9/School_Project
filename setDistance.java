@@ -53,6 +53,7 @@ public class setDistance extends helper
         } // end of else-if. 
         else if(arrival.equals(destinations[3]))
         {
+            System.out.println(distance);
             distance = MtoD; 
         } // end of else-if. 
         else if(arrival.equals(destinations[4]))
