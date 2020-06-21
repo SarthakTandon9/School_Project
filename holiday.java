@@ -1,17 +1,18 @@
+package School_Project;
 public class holiday extends helper
 {
     
     //distance constants required for the costing.
-    String dest[] = new String[4]; 
+    public String dest[] = new String[4]; 
     
 
-    String destinations[] = { "Mumbai", "Kolkata", "Chennai", "Delhi", "Bangalore" };
+   
 
     holiday(String depart)
     {
         dest = ascendDestinations(depart);
     } // end of constructor. 
-    String[] ascendDestinations(String depart)
+    public String[] ascendDestinations(String depart)
     {
         String places_init[] = new String[3]; 
         String places_final[] = new String[3];
@@ -52,7 +53,7 @@ public class holiday extends helper
     } 
 
     //bubble sort to return array in assending order of cost
-    static String[] bubble_sort(double[] dest, String[] places)
+    private static String[] bubble_sort(double[] dest, String[] places)
     {
         
         int n = dest.length; 
@@ -85,7 +86,7 @@ public class holiday extends helper
         return retVal;  
     } // end of void. 
 
-    static String[] findDepart(String[] places, String depart)
+    private static String[] findDepart(String[] places, String depart)
     {
        
         String retVal[] = new String[(places.length-1)]; 

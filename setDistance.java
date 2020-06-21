@@ -1,4 +1,4 @@
-
+package School_Project;
 public class setDistance extends helper
 {
    
@@ -7,14 +7,14 @@ public class setDistance extends helper
 
     String destinations[] = { "Mumbai", "Kolkata", "Chennai", "Delhi", "Bangalore" };
     //The destinations array, determined by default. 
-    double cost = 0.0; 
-    double distance = 0.0;  
+    
+    public double distance = 0.0;  
     
     setDistance(String departure, String arr)
     {
         determineDestinations(departure, arr);
     } //end of construcot. 
-    public void determineDestinations(String depart, String arrival)
+    private void determineDestinations(String depart, String arrival)
     {
         switch(depart)
         {
@@ -39,7 +39,7 @@ public class setDistance extends helper
 
         }
     }
-    void arrMumbai(String arrival)
+    private void arrMumbai(String arrival)
     {
         if(arrival.equals(destinations[1]))
         {
@@ -68,7 +68,7 @@ public class setDistance extends helper
         
     }// end of void. 
 
-    void arrKolkata(String arrival)
+    private void arrKolkata(String arrival)
     {
         if(arrival.equals(destinations[0]))
         {
@@ -93,7 +93,7 @@ public class setDistance extends helper
         } // end of else. 
         
     }// end of void. 
-    void arrChennai(String arrival)
+    private void arrChennai(String arrival)
     {
         if(arrival.equals(destinations[0]))
         {
