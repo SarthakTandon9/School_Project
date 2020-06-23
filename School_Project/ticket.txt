@@ -1,0 +1,9 @@
+
+Name: Master. Sarthak tandon
+Age: 14
+Gender: m
+The destinations chosen by you are: 
+Departure: Kolkata
+Arrival: Delhi
+The trip type is Round-Trip
+The total cost is: 217380.0

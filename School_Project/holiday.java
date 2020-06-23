@@ -4,9 +4,7 @@ public class holiday extends helper
     
     //distance constants required for the costing.
     public String dest[] = new String[4]; 
-    
 
-   
 
     holiday(String depart)
     {

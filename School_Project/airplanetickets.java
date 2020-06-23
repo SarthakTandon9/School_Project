@@ -8,12 +8,13 @@ import java.util.Scanner;
     {
     
     //default destinations array. 
-    private String name, gender, departure , arrival;
+    private String name, gender, departure , arrival, path;
     private int age = 0;
     private boolean trip = false;
     private double  default_cost = 2500, cost= 0.0; 
     private final int length = 5; 
     private int counter_global_arr =  0, counter_global_dep = 0;
+   
     //declaring necessary variables. 
 
     airplanetickets() {
@@ -356,8 +357,49 @@ import java.util.Scanner;
         typeTrip();
         calculateCost();
         display();
+        write(); 
     } //end of void. 
+    private void write()
+    {
+        System.out.println("Please give a path to store the text file."); 
+        BufferedReader inp = new BufferedReader(new InputStreamReader(System.in));
+        try
+        {
+            path = inp.readLine();
+            writeToFile write = new writeToFile(path);
+            write.write("This is the information entered by You!" + '\n');
+            write.write("Name: " + name + '\n');
+            write.write("Age: " + age + '\n');
+            write.write("Gender: " + gender + '\n');
 
+            write.write(" "); 
+
+            write.write("The destinations chosen by you are: "+ '\n'); 
+            write.write("Departure: " + departure + '\n');
+            write.write("Arrival: " + arrival + '\n'); 
+
+            if(trip)
+            {
+                write.write("The trip type is Round-Trip" + '\n'); 
+            }
+            else
+            {
+                write.write("The trip type is One-Way" + '\n'); 
+            }
+
+            write.write("The total cost is: " + cost + '\n'); 
+
+
+
+
+        }
+        catch(Exception e)
+        {
+            System.out.println(e); 
+        }
+        System.out.println("File successfully stored at " + path);
+    }
+  
 
 
     
