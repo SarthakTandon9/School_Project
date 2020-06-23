@@ -5,7 +5,7 @@ public class setDistance extends helper
     //distance constants required for the costing.
     
 
-    String destinations[] = { "Mumbai", "Kolkata", "Chennai", "Delhi", "Bangalore" };
+    
     //The destinations array, determined by default. 
     
     public double distance = 0.0;  
