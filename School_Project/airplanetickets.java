@@ -367,27 +367,27 @@ import java.util.Scanner;
         {
             path = inp.readLine();
             writeToFile write = new writeToFile(path);
-            write.write("This is the information entered by You!");
-            write.write("Name: " + name);
-            write.write("Age: " + age);
-            write.write("Gender: " + gender);
+            write.write("This is the information entered by You!" + '\n');
+            write.write("Name: " + name + '\n');
+            write.write("Age: " + age + '\n');
+            write.write("Gender: " + gender + '\n');
 
             write.write(" "); 
 
-            write.write("The destinations chosen by you are: "); 
-            write.write("Departure: " + departure);
-            write.write("Arrival: " + arrival); 
+            write.write("The destinations chosen by you are: "+ '\n'); 
+            write.write("Departure: " + departure + '\n');
+            write.write("Arrival: " + arrival + '\n'); 
 
             if(trip)
             {
-                write.write("The trip type is Round-Trip"); 
+                write.write("The trip type is Round-Trip" + '\n'); 
             }
             else
             {
-                write.write("The trip type is One-Way"); 
+                write.write("The trip type is One-Way" + '\n'); 
             }
 
-            write.write("The total cost is: " + cost); 
+            write.write("The total cost is: " + cost + '\n'); 
 
 
 

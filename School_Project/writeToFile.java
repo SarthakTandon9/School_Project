@@ -1,29 +1,17 @@
 package School_Project;
 import java.io.FileWriter; 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 public class writeToFile  
 {
     String path = "";
     writeToFile(String data) 
     {
-        System.out.println("Please enter path: ");
-        BufferedReader inp = new BufferedReader(new InputStreamReader(System.in));
-        try
-        {
-            path = inp.readLine();
-           
-        } // end of try
-        catch(Exception e)
-        {
-            System.out.println(e);
-        }// end of catch. 
+        path = data; 
     }
     void write(String data)
     {
         try
         {
-            FileWriter fw = new FileWriter(path); 
+            FileWriter fw = new FileWriter(path, true); 
             fw.write(data); 
             fw.close(); 
         } catch(Exception e)
